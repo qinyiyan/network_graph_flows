@@ -1,0 +1,10 @@
+#Part2:
+#Measuring the degree distribution(in and out degree)
+in_degree = degree(gcc,mode="in")
+out_degree = degree(gcc,mode="out")
+png(filename="2_1.png")
+plot(degree.distribution(gcc), main = "Degree Distribution of GCC")
+png(filename="2_2.png")
+hist(in_degree, breaks=100,main ="in-degree distribution of GCC", xlab="in_degree",ylab="distribution")
+png(filename="2_3.png")
+hist(out_degree, breaks=100,main ="out-degree distribution of GCC", xlab="out_degree",ylab="distribution")
